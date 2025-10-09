@@ -4,88 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content ="width=device-width",initial-scale=1.0">
     <title>Test Page</title>
-    <style>
-      /* Basic page styling */
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f9f6;
-        color: #333;
-        margin: 0;
-        padding: 20px;
-      }
+      <style>
+    /* Basic Page Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
 
-      h1 {
-        color: #2e7d32; /* dark green */
-        text-align: center;
-      }
+    /* Header */
+    .header {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-      h2 {
-        color: #388e3c; /* medium green */
-        margin-top: 30px;
-        border-bottom: 2px solid #a5d6a7;
-        padding-bottom: 5px;
-      }
+    .header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
 
-      ul,
-      ol {
-        margin-left: 40px;
-        line-height: 1.8;
-      }
+    .header a:hover {
+      text-decoration: underline;
+    }
 
-      ul li {
-        list-style-type: square;
-      }
+    /* Main Section */
+    .main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 40px;
+      background-color: white;
+    }
 
-      ol li {
-        list-style-type: decimal;
-      }
+    .left {
+      max-width: 400px;
+    }
 
-      a {
-        display: inline-block;
-        margin-top: 30px;
-        text-decoration: none;
-        background-color: #4caf50;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-      }
+    .left h2 {
+      color: #4caf50;
+    }
 
-      a:hover {
-        background-color: #2e7d32;
-      }
+    .left button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-      /* Optional box for content */
-      .container {
-        max-width: 700px;
-        margin: auto;
-        background: #fff;
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-    </style>
-  </head>
+    .left button:hover {
+      background-color: #388e3c;
+    }
+
+    .right img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
   <body>
-    <div class="container">
-      <h1>welcome to the page</h1>
-      <p>this page have ordered and unordered list using html and css.</p>
-      <h2>unordered list</h2>
-      <ul>
-        <li>Siva</li>
-        <li>Velmain</li>
-        <li>yazhini</li>
-        <li>varsitha</li>
-        <li>Madhu</li>
-      </ul>
+   
+     <header class="nav">
+        <h1>Growhut</h1>
+        <nav>
+            <a href="#"> home</a>
+            <a href="#"> about</a>
+            <a href="#"> contact</a>
+            <a href="#"> login</a>
+        </nav>
+     </header>
+     <main class ="main">
+        <div class ="left">
+            <h2 >Welcome to Growhut</h2>
+            <p>Build your own garden with our tools,seeds and pots </p>
+            <button> Shop now</button>
+        </div>
+        <div class ="right">
+            <img src ="https://via.placeholder.com/300x200" alt="img">
 
-      <h2>Ordered list</h2>
-      <ol>
-        <li>SANTHIYA</li>
-        <li>vijaya sri</li>
-        <li>Seeja</li>
-        <li>Swetha</li>
-      </ol>
-    </div>
+        </div>
+        
+
+     </main>
+     <footer class ="footer">
+        <p>@ 2025 growhut gardening</p>
+     </footer>
   </body>
 </html>
