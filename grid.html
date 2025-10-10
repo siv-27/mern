@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        gap: 20px;
+        background-color: coral;
+        padding: 10px;
+      }
+      .container > div {
+        background-color: rgb(245, 227, 203);
+        color: black;
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .box1 {
+        grid-column: 1/ span 7;
+      }
+      .box2 {
+        grid-row: 2 / span 3;
+      }
+      .box3 {
+        grid-column: 2 / span 6;
+      }
+      .box4 {
+        grid-column: 2 / span 3;
+      }
+
+      .box5 {
+        grid-column: 5 / span 3 ;
+      }
+      .box6 {
+        grid-column: 1 / span 7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">c</div>
+      <div class="box4">D</div>
+      <div class="box5">E</div>
+      <div class="box6">F</div>
+    </div>
+  </body>
+</html>
