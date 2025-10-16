@@ -1,14 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-const Nav = () => {
+const About = () => {
   return (
-    <nav className="navbar">
-      <Link to="/" className="nav-link">Home</Link>
-      <Link to="/about" className="nav-link">About</Link>
-      <Link to="/contact" className="nav-link">Contact</Link>
-    </nav>
+    <div>About</div>
   )
 }
 
-export default Nav
+export default About

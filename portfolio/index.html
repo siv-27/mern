@@ -1,60 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Siva Swetha | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siva Swetha | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Devicon CDN for programming icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <!-- Home Section -->
+    <section class="home">
+      <div class="home-content">
+        <h3>Welcome!</h3>
+        <h1>I’m <span>Siva Swetha</span></h1>
+        <h2>A Passionate Web & App Developer</h2>
+        <p>
+          I specialize in creating responsive websites and Android apps with a
+          focus on clean design, usability, and performance.
+        </p>
 
-  <section class="home">
-    <div class="home-content">
-      <h3>Welcome!</h3>
-      <h1>I’m <span>Siva Swetha</span></h1>
-      <h2>A Passionate Web & App Developer</h2>
-      <p>I specialize in creating responsive websites and Android apps with a focus on clean design, usability, and performance.</p>
-
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-    </div>
 
-    <div class="home-image">
-      <img src="profile.jpg" alt="Siva Swetha">
-    </div>
-  </section>
+      <div class="home-image">
+        <img src="profile.jpg" alt="Siva Swetha" />
+      </div>
+    </section>
 
-  <section class="about">
-    
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-image">
+        <img src="images/about1.svg" alt="About illustration" />
+      </div>
 
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>I’m Siva Swetha, a developer passionate about building efficient, user-friendly, and visually appealing digital products. I enjoy working across multiple technologies to bring ideas to life.</p>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m Siva Swetha, a developer passionate about building efficient,
+          user-friendly, and visually appealing digital products. I enjoy
+          working across multiple technologies to bring ideas to life.
+        </p>
+      </div>
+    </section>
 
-      <ul class="info">
-        <li><strong>Skills:</strong> HTML, CSS, JavaScript, React JS, Flutter, PHP, MySQL, Firebase, Node.js</li>
-        <li><strong>Projects:</strong></li>
-        <ul>
-          <li>Student Location Alert System – Android app that alerts parents when students enter the college area.</li>
-          <li>Preloved Bookstore – PHP-MySQL website for selling and buying used books.</li>
-          <li>SecureShare – Flutter app for secure, password-protected file sharing.</li>
-          <li>GrowHut – MERN stack e-commerce site for gardening tools.</li>
-        </ul>
-      </ul>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card"><i class="devicon-html5-plain colored"></i>HTML</div>
+        <div class="skill-card"><i class="devicon-css3-plain colored"></i>CSS</div>
+        <div class="skill-card"><i class="devicon-javascript-plain colored"></i>JavaScript</div>
+        <div class="skill-card"><i class="devicon-react-original colored"></i>React JS</div>
+        <div class="skill-card"><i class="devicon-flutter-plain colored"></i>Flutter</div>
+        <div class="skill-card"><i class="devicon-php-plain colored"></i>PHP</div>
+        <div class="skill-card"><i class="devicon-mysql-original colored"></i>MySQL</div>
+        <div class="skill-card"><i class="devicon-firebase-plain colored"></i>Firebase</div>
+        <div class="skill-card"><i class="devicon-nodejs-plain colored"></i>Node.js</div>
+      </div>
+    </section>
 
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <p><i class="fas fa-envelope"></i> sckswetha27@gmail.com</p>
-    <p><i class="fas fa-phone"></i> +91 6383883577</p>
-    <p><i class="fas fa-map-marker-alt"></i> Coimbatore, India</p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Student Location Alert System</h3>
+          <p>
+            Android app that alerts parents when students enter the college area using geofencing and Firebase.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Preloved Bookstore</h3>
+          <p>
+            PHP-MySQL web app for buying and selling used books with login, signup, and checkout functionalities.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>SecureShare</h3>
+          <p>
+            Flutter app to securely encrypt files with passwords before sharing, ensuring data protection.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>LeakShield</h3>
+          <p>
+            Flutter-based browser integrating ML models to detect online data breaches in real-time.
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>Facial Emotion Recognition</h3>
+          <p>
+            Machine learning project that classifies emotions using facial expressions from live video input.
+          </p>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> sckswetha27@gmail.com</p>
+        <span> | </span>
+        <p><i class="fas fa-phone"></i> +91 6383883577</p>
+        <span> | </span>
+        <p><i class="fas fa-map-marker-alt"></i> Coimbatore, India</p>
+      </div>
+    </section>
+  </body>
 </html>
