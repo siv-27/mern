@@ -255,3 +255,157 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+.project-svg {
+  width: 280px;   /* decrease size */
+  height: auto;
+
+}
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin: 0;
+}
+.certificates {
+  padding: 60px 20px;
+  background-color: #f9fbfc;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.certificate-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.certificate-card h3 {
+  color: #004d40;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.certificate-card p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+.cr-svg {
+  width: 200px;   /* decrease size */
+  height: auto;
+
+}
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers the cards */
+  gap: 20px; /* controls space between cards */
+}
+
+.certificate-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px; /* adjust width as needed */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+/* Smooth scroll for header navigation */
+html {
+  scroll-behavior: smooth;
+}
+/* ===== HEADER (compact version) ===== */
+.header {
+  background: #008080;
+  color: white;
+  padding: 8px 0; /* reduced padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header .container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem; /* smaller logo text */
+  letter-spacing: 0.5px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px; /* reduced spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem; /* smaller font */
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ccebc5;
+}
+
+/* Contact icons */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #00796b;
+  margin: 0 15px;
+  font-size: 30px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00796b;
+  transform: scale(1.2);
+}

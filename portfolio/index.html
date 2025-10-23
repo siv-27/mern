@@ -9,19 +9,40 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Devicon CDN for programming icons -->
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Devicons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
   </head>
   <body>
-    <!-- Home Section -->
-    <section class="home">
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Siva Swetha</h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="home">
       <div class="home-content">
         <h3>Welcome!</h3>
         <h1>I’m <span>Siva Swetha</span></h1>
@@ -31,24 +52,20 @@
           focus on clean design, usability, and performance.
         </p>
 
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="home-buttons">
+         
+          <a href="#projects" class="btn">Projects</a>
+          <a href="#certificates" class="btn">Certificates</a>
         </div>
-      </div>
-
-      <div class="home-image">
-        <img src="profile.jpg" alt="Siva Swetha" />
+        <br />
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
       <div class="about-image">
         <img src="images/about1.svg" alt="About illustration" />
       </div>
-
       <div class="about-text">
         <h2>About Me</h2>
         <p>
@@ -59,14 +76,13 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills">
       <h2>Skills</h2>
       <div class="skills-container">
         <div class="skill-card"><i class="devicon-html5-plain colored"></i>HTML</div>
         <div class="skill-card"><i class="devicon-css3-plain colored"></i>CSS</div>
         <div class="skill-card"><i class="devicon-javascript-plain colored"></i>JavaScript</div>
-        <div class="skill-card"><i class="devicon-react-original colored"></i>React JS</div>
         <div class="skill-card"><i class="devicon-flutter-plain colored"></i>Flutter</div>
         <div class="skill-card"><i class="devicon-php-plain colored"></i>PHP</div>
         <div class="skill-card"><i class="devicon-mysql-original colored"></i>MySQL</div>
@@ -75,53 +91,86 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects" class="projects">
       <h2>Projects</h2>
+      <br />
       <div class="projects-container">
         <div class="project-card">
           <h3>Student Location Alert System</h3>
           <p>
             Android app that alerts parents when students enter the college area using geofencing and Firebase.
           </p>
+          <p class="tech-used"><strong>Tech Used:</strong> Flutter, Firebase, Google Maps API</p>
         </div>
+
         <div class="project-card">
           <h3>Preloved Bookstore</h3>
           <p>
             PHP-MySQL web app for buying and selling used books with login, signup, and checkout functionalities.
           </p>
+          <p class="tech-used"><strong>Tech Used:</strong> PHP, MySQL, HTML, CSS</p>
         </div>
+
         <div class="project-card">
           <h3>SecureShare</h3>
           <p>
             Flutter app to securely encrypt files with passwords before sharing, ensuring data protection.
           </p>
+          <p class="tech-used"><strong>Tech Used:</strong> Flutter, Dart, Jetpack Compose</p>
         </div>
+
         <div class="project-card">
           <h3>LeakShield</h3>
           <p>
             Flutter-based browser integrating ML models to detect online data breaches in real-time.
           </p>
+          <p class="tech-used"><strong>Tech Used:</strong> Flutter, Machine Learning, Firebase</p>
         </div>
+
         <div class="project-card">
           <h3>Facial Emotion Recognition</h3>
           <p>
             Machine learning project that classifies emotions using facial expressions from live video input.
           </p>
+          <p class="tech-used"><strong>Tech Used:</strong> Python, OpenCV, TensorFlow, Keras</p>
+        </div>
+
+        <div class="projects-illustration">
+          <img src="images/project.svg" alt="Projects Illustration" class="project-svg" />
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> sckswetha27@gmail.com</p>
-        <span> | </span>
-        <p><i class="fas fa-phone"></i> +91 6383883577</p>
-        <span> | </span>
-        <p><i class="fas fa-map-marker-alt"></i> Coimbatore, India</p>
+    <!-- ===== CERTIFICATES SECTION ===== -->
+    <section class="certificates" id="certificates">
+      <h2>Certificates</h2>
+      <div class="certificates-container">
+        <div class="certificate-card">
+          <h3>MERN Stack - Internship</h3>
+          <p>Certified by App Innovation</p>
+          <a href="images/INTERNSHIP CERTIFICATE.pdf" class="btn">View Certificate</a>
+        </div>
+
+        <div class="certificate-card">
+          <h3>Python for ML</h3>
+          <p>Certified by Great Learning</p>
+          <a href="images/cr2.jpg" class="btn">View Certificate</a>
+        </div>
       </div>
     </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+      <h2>Let's connect</h2>
+      <p> You can reach out through any of the platforms below:</p>
+
+      <div class="social-icons">
+        <a href="mailto:sivaswetha482@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/siv-27" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/siva-swetha-4ba098301/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </section>
+
   </body>
 </html>

@@ -8,6 +8,9 @@ const Home = () => {
         <li>
           <Link to="/state" >usestate</Link>
         </li>
+        <li>
+          <Link to="/effect" >Effects</Link>
+        </li>
       </ul>
       </div>
   )
