@@ -44,7 +44,9 @@ body {
   transform: scale(1.2);
   color: #006666;
 }
-
+.about-text h3{
+  color:#008080
+}
 /* About Section */
 .about {
   display: flex;
@@ -278,49 +280,101 @@ body {
   margin: 0;
 }
 .certificates {
-  padding: 60px 20px;
-  background-color: #f9fbfc;
   text-align: center;
+  padding: 80px 0;
+  background: #f8f9fa;
 }
 
 .certificates h2 {
-  font-size: 2rem;
-  color: #00796b;
+  font-size: 2.2rem;
   margin-bottom: 40px;
+  color: #333;
 }
 
 .certificates-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .certificate-card {
   background: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .certificate-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.certificate-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .certificate-card h3 {
-  color: #004d40;
-  margin-bottom: 10px;
-  font-weight: 600;
+  margin: 15px 0 5px;
+  color: #222;
 }
 
 .certificate-card p {
   color: #555;
-  margin-bottom: 15px;
   font-size: 0.95rem;
 }
+
+.certificate-card .btn {
+  display: inline-block;
+  margin: 15px 0 20px;
+  background-color: #00b894;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.certificate-card .btn:hover {
+  background-color: #019870;
+}
+.education {
+  margin-top: 20px;
+}
+
+.education-card {
+  background: #f8f9fa;
+  border-left: 5px solid #00b894;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  width: 80%;              /* make narrower */
+  max-width: 500px;  
+}
+
+.education-card:hover {
+  transform: translateY(-3px);
+}
+
+.education-card h4 {
+  margin: 0;
+  color: #00b894;
+  font-size: 1.1rem;
+}
+
+.education-card p {
+  margin: 5px 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+
 .cr-svg {
   width: 200px;   /* decrease size */
   height: auto;
