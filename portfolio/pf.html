@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Siva Swetha | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -52,7 +54,7 @@
         </p>
 
         <div class="home-buttons">
-         
+         <a href="resume.pdf" class="btn"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
           <a href="#projects" class="btn">Projects</a>
           <a href="#certificates" class="btn">Certificates</a>
         </div>
@@ -95,7 +97,8 @@
       <h2>Projects</h2>
       <br />
       <div class="projects-container">
-        <div class="project-card">
+       <div class="project-card" data-aos="fade-up">
+
           <h3>Student Location Alert System</h3>
           <p>
             Android app that alerts parents when students enter the college area using geofencing and Firebase.
@@ -103,7 +106,8 @@
           <p class="tech-used"><strong>Tech Used:</strong> Flutter, Firebase, Google Maps API</p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up">
+
           <h3>Preloved Bookstore</h3>
           <p>
             PHP-MySQL web app for buying and selling used books with login, signup, and checkout functionalities.
@@ -111,7 +115,8 @@
           <p class="tech-used"><strong>Tech Used:</strong> PHP, MySQL, HTML, CSS</p>
         </div>
 
-        <div class="project-card">
+       <div class="project-card" data-aos="fade-up">
+
           <h3>SecureShare</h3>
           <p>
             Flutter app to securely encrypt files with passwords before sharing, ensuring data protection.
@@ -119,7 +124,8 @@
           <p class="tech-used"><strong>Tech Used:</strong> Flutter, Dart, Jetpack Compose</p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up">
+
           <h3>LeakShield</h3>
           <p>
             Flutter-based browser integrating ML models to detect online data breaches in real-time.
@@ -127,7 +133,8 @@
           <p class="tech-used"><strong>Tech Used:</strong> Flutter, Machine Learning, Firebase</p>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-up">
+
           <h3>Facial Emotion Recognition</h3>
           <p>
             Machine learning project that classifies emotions using facial expressions from live video input.
@@ -175,6 +182,10 @@
         <a href="https://www.linkedin.com/in/siva-swetha-4ba098301/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
   </body>
 </html>
